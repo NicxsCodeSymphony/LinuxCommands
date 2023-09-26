@@ -2,13 +2,13 @@ Steps in installing tar.gz file
 1. Extract the file
 2. Move extracted file to the Home directory
 3. Open the extracted folder and open terminal
-4. then type this into the terminal: cp 'Name of the software' ~/Desktop/ (This will add shortcut to your Desktop)
+4. then type this into the terminal: ln -s 'Name of the software' ~/Desktop/ (This will add shortcut to your Desktop)
 
 
-cd 'folder name'             -> Move to the directory
-cd ..                        -> Back to previos directory  
-mkdir 'folder name'          -> Add folder
-sudo rm -r 'filename'        -> Remove file or folder
-cp 'file name' ~/Desktop/    -> Create a shortcut to your desktop
-clear                        -> Clear the terminal
-
+cd 'folder name'                   -> Move to the directory
+cd ..                              -> Back to previos directory  
+mkdir 'folder name'                -> Add folder
+sudo rm -r 'filename'              -> Remove file or folder
+cp 'file name' ~/Desktop/          -> Pin to Desktop
+clear                              -> Clear the terminal
+ln -s [target_path] [link_name]    -> Create a symbolic link to Desktop
